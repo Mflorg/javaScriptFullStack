@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <!--BOOSTRAP 4-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <!--ANIMATED CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+ <nav class="navbar navbar-dark bg-dark p-2">
+     <div class="container">
+         <a href="navbar-brand">Books App</a>
+         <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>        
+        </div>
+ </nav>
+ <div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 p-3">
+        <form id="bookForm" class="card card-body" action="">
+            <div class="form-group">
+                <input  id="tittle" type="text" name="tittle" class="form-control" placeholder="Book Tittle">
+            </div>
+            <div class="form-group">
+                <input id="author" type="text" name="author" class="form-control" placeholder="Author">
+            </div>
+            <div class="form-group">
+                <input id="isbn" type="text" name="isbn" class="form-control" placeholder="ISBN">
+            </div>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="image" required>
+                    <label for="image" class="custom-file-label">Choose Image</label>
+                </div>
+            </div>
+            <button class="btn btn-primary">Save Book</button>
+        </form>
+
+    </div>
+    <div class="col-md-8" id="books-cards">
+
+    </div>
+  </div>
+ </div>
+</body>
+</html>
